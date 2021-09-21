@@ -1,0 +1,32 @@
+
+@import 'styles/colors.scss';
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+
+  #navbar {
+    display: flex;
+    width: 100%;
+    background-color: $blue-primary;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+ li  {
+    margin: 10px 30px;
+    text-decoration: none;
+    a {
+        text-decoration: none;
+        color: white;
+      }
+    
+  }
+
+ 
