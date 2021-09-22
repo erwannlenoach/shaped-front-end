@@ -1,0 +1,48 @@
+@mixin formElement($display: grid) {
+    display: $display;
+    width:70%
+}
+
+.form-container {
+    display: grid;
+}
+
+.form {
+    @include formElement;
+    margin:10px;
+   
+}
+
+#password-div {
+    display: flex;
+    width:70%
+
+}
+
+input {
+    margin-top: 10px;
+    border-radius: 3px;
+    border-color: lightgrey;
+    height: 20px;
+    padding: 5px;
+    padding-left: 7px;
+}
+
+.CGU {
+    @include formElement($display: flex)
+}
+
+input {
+margin-top: 10px;
+border-radius: 3px;
+}
+
+#send { 
+    margin-top: 20px;
+    width:200px;
+    margin: 10px;
+    button {
+        width:fit-content;
+        height: fit-content;
+    }
+}

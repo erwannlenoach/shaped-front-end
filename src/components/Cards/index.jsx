@@ -4,7 +4,6 @@ import img from 'assets/surfboard.jpg'
 import './style.scss'
 
 
-
 const Cards = () => {
 
     const [error, setError] = useState(null);
@@ -47,8 +46,6 @@ const Cards = () => {
                             <button class="button-rounded-blue">Show More</button>
                         </div>
                     </div>
-        
-        
                 </div>
                 ))}
             </ul>

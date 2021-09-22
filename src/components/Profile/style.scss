@@ -1,0 +1,59 @@
+@import 'styles/colors.scss';
+
+
+
+@mixin cardTemplate($display, $width, $align-items) {
+ 
+    display: $display;
+    width: $width;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+    &hover{
+        opacity: 05;
+    }
+    .img-card{
+        display: flex;
+        justify-content: center;
+        .img-item {
+            width: 250px;
+            padding-top: 30px;
+            border-radius: 3px
+            
+        }
+    }
+  
+    .card-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: $align-items;
+        margin: 10px;
+        #title-card {
+            margin: 0
+        }
+        #paragraph-card {
+            margin: 10px
+        }
+    }
+}
+
+.card {
+    @include cardTemplate($display: grid, $width: 250px, $align-items: center)
+
+}
+
+
+.card-detailed {
+    @include cardTemplate($display: flex, $width: fit-content, $align-items:left);
+    .card-text{
+        padding-left: 50px;
+        width: 50%;
+    }
+
+
+}
+
+
+
+
